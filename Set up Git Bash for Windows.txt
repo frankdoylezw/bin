@@ -1,0 +1,13 @@
+/* How to set up Git Bash for Windows to run scripts globally*/
+
+1. Create a bin folder in your home directory
+2. Create .bashrc in your home directory
+3. Add the following to your .bashrc file:
+
+PATH=$PATH:/c/Users/frank/bin
+
+4. Make your scripts like so:
+
+#!/usr/bin/env sh
+echo Hello Monkey
+
