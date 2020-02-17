@@ -1,0 +1,22 @@
+#!/bin/bash
+echo "What story number are these results for?"
+read story
+
+
+
+
+file_location=/Users/frankdoyle/bin/$story.docx
+if [ -e $story ]; then
+	echo "File $story already exists."
+else
+	cat > $file_location <<EOF
+{
+	"contact": {
+		"name": "xyz",
+		"phonenumber": "123456789"
+		}
+}
+EOF
+fi
+
+echo "Finished."

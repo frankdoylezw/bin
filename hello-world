@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo Who are you?
+read who
+echo Hey $who, nice to meet you.
+echo How old are you, $who?
+read age
+
+if [ $age -ge 18 ]
+then
+	echo You can partake of alcoholic beverages! Nice!
+
+else
+	echo You can't join the paaaarttaaaay, my friend. Call me when you're 18!
+fi
+
+echo I can create a file for you. What would you like to call it?
+read filecalled
+
+if [ -e $filecalled ]; then
+	echo "File $filecalled already exists!"
+else
+	echo >> $filecalled
+fi
+
+
+echo "OK, I've created the file called $filecalled for you."

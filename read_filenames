@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FILES=/Users/frankdoyle/bin/*
+
+for file in $FILES
+do
+	echo $(basename $file)
+done
