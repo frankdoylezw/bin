@@ -18,7 +18,7 @@ echo
 echo
 echo "Current working directory is '$cwd'"
 
-cp /c/Users/frank/bin/Userform\ Template.dotm $cwd 
+cp /Users/frankdoyle/bin/Userform\ Template.dotm $cwd 
 
 
 echo "Folders for story '$story_number' created!"
